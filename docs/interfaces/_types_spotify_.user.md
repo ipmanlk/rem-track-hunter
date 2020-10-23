@@ -1,4 +1,4 @@
-**[rem-track-hunter](../README.md)**
+**[@ipmanlk/rem-track-hunter](../README.md)**
 
 > [Globals](../globals.md) / ["types/spotify"](../modules/_types_spotify_.md) / User
 
@@ -22,7 +22,7 @@
 
 • `Optional` **id**: undefined \| string
 
-*Defined in types/spotify.ts:41*
+*Defined in [types/spotify.ts:41](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/spotify.ts#L41)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 •  **name**: string
 
-*Defined in types/spotify.ts:42*
+*Defined in [types/spotify.ts:42](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/spotify.ts#L42)*
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 •  **uri**: string
 
-*Defined in types/spotify.ts:43*
+*Defined in [types/spotify.ts:43](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/spotify.ts#L43)*

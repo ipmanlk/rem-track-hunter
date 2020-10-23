@@ -1,4 +1,4 @@
-**[rem-track-hunter](../README.md)**
+**[@ipmanlk/rem-track-hunter](../README.md)**
 
 > [Globals](../globals.md) / ["types/spotify"](../modules/_types_spotify_.md) / Info
 
@@ -24,7 +24,7 @@
 
 • `Optional` **album**: [Album](_types_spotify_.album.md)
 
-*Defined in types/spotify.ts:59*
+*Defined in [types/spotify.ts:59](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/spotify.ts#L59)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • `Optional` **artist**: [Artist](_types_spotify_.artist.md)
 
-*Defined in types/spotify.ts:58*
+*Defined in [types/spotify.ts:58](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/spotify.ts#L58)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 • `Optional` **playlist**: [Playlist](_types_spotify_.playlist.md)
 
-*Defined in types/spotify.ts:60*
+*Defined in [types/spotify.ts:60](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/spotify.ts#L60)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 • `Optional` **track**: [Track](_types_spotify_.track.md)
 
-*Defined in types/spotify.ts:57*
+*Defined in [types/spotify.ts:57](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/spotify.ts#L57)*
 
 ___
 
@@ -56,4 +56,4 @@ ___
 
 •  **type**: \"album\" \| \"artist\" \| \"episode\" \| \"playlist\" \| \"track\" \| \"show\"
 
-*Defined in types/spotify.ts:56*
+*Defined in [types/spotify.ts:56](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/spotify.ts#L56)*

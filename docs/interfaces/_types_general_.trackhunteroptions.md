@@ -1,4 +1,4 @@
-**[rem-track-hunter](../README.md)**
+**[@ipmanlk/rem-track-hunter](../README.md)**
 
 > [Globals](../globals.md) / ["types/general"](../modules/_types_general_.md) / TrackHunterOptions
 
@@ -20,4 +20,4 @@
 
 •  **type**: [trackType](../modules/_types_general_.md#tracktype)
 
-*Defined in types/general.ts:16*
+*Defined in [types/general.ts:16](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/general.ts#L16)*

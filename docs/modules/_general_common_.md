@@ -1,4 +1,4 @@
-**[rem-track-hunter](../README.md)**
+**[@ipmanlk/rem-track-hunter](../README.md)**
 
 > [Globals](../globals.md) / "general/common"
 
@@ -18,7 +18,7 @@
 
 ▸ **getUrlType**(`url`: string): General.urlType \| false
 
-*Defined in general/common.ts:8*
+*Defined in [general/common.ts:8](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/general/common.ts#L8)*
 
 **`internal`** 
 
@@ -36,7 +36,7 @@ ___
 
 ▸ **getYoutubeUrl**(`keyword`: string): Promise\<string \| false>
 
-*Defined in general/common.ts:24*
+*Defined in [general/common.ts:24](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/general/common.ts#L24)*
 
 **`internal`** 
 
@@ -56,7 +56,7 @@ ___
 
 ▸ **searchSearx**(`keyword`: string): Promise\<string \| false>
 
-*Defined in general/common.ts:42*
+*Defined in [general/common.ts:42](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/general/common.ts#L42)*
 
 This will use as a fallback when ytsr fails to retrieve a link
 

@@ -36,7 +36,7 @@ export async function getTracks(
 			.map((t) => {
 				return {
 					name: t.title,
-					identifier: t.url,
+					uri: t.url,
 					type: "youtube",
 					duration: getSecondsFromYtLabel(t.duration || ""),
 				} as General.Track;
@@ -58,7 +58,7 @@ export async function getTracks(
 	const track: General.Track = {
 		name: trackInfo.videoDetails.title,
 		type: "youtube",
-		identifier: youtubeLink,
+		uri: youtubeLink,
 		duration: parseInt(trackInfo.videoDetails.lengthSeconds) || 0,
 	};
 

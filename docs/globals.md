@@ -1,8 +1,8 @@
-**[rem-track-hunter](README.md)**
+**[@ipmanlk/rem-track-hunter](README.md)**
 
 > Globals
 
-# rem-track-hunter
+# @ipmanlk/rem-track-hunter
 
 ## Index
 

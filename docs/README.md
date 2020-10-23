@@ -1,4 +1,4 @@
-**[rem-track-hunter](README.md)**
+**[@ipmanlk/rem-track-hunter](README.md)**
 
 > [Globals](globals.md)
 
@@ -25,4 +25,7 @@ getTracks("Naruto", {type: "themes.moe"}).then(tracks => {
 }).catch(e => {
   console.log(e);
 });
+
 ```
+### Docs
+[View Docs](https://ipmanlk.github.io/rem-track-hunter/)

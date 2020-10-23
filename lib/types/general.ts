@@ -4,7 +4,7 @@ export type trackType = urlType;
 export interface Track {
 	name: string;
 	type: trackType;
-	identifier: string;
+	uri: string;
 	getYtUrl?(keywordOrUrl: string): Promise<string | false>;
 	seekedTime?: number;
 	duration?: number;

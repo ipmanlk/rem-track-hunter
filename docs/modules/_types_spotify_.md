@@ -1,4 +1,4 @@
-**[rem-track-hunter](../README.md)**
+**[@ipmanlk/rem-track-hunter](../README.md)**
 
 > [Globals](../globals.md) / "types/spotify"
 

@@ -1,4 +1,4 @@
-**[rem-track-hunter](../README.md)**
+**[@ipmanlk/rem-track-hunter](../README.md)**
 
 > [Globals](../globals.md) / "main"
 
@@ -16,7 +16,7 @@
 
 ▸ **getTracks**(`keywordOrUrl`: string, `options?`: General.TrackHunterOptions): Promise\<Array\<[Track](../interfaces/_types_general_.track.md)>>
 
-*Defined in main.ts:8*
+*Defined in [main.ts:8](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/main.ts#L8)*
 
 #### Parameters:
 

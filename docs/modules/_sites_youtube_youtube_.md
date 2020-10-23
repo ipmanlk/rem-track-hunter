@@ -1,4 +1,4 @@
-**[rem-track-hunter](../README.md)**
+**[@ipmanlk/rem-track-hunter](../README.md)**
 
 > [Globals](../globals.md) / "sites/youtube/youtube"
 
@@ -17,7 +17,7 @@
 
 ▸ **getSecondsFromYtLabel**(`label`: string): number \| false
 
-*Defined in sites/youtube/youtube.ts:72*
+*Defined in [sites/youtube/youtube.ts:72](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/sites/youtube/youtube.ts#L72)*
 
 This will parse youtube time label (HH:mm:ss) and return seconds or false if parse failed
 
@@ -37,7 +37,7 @@ ___
 
 ▸ **getTracks**(`keywordOrUrl`: string): Promise\<Array\<[Track](../interfaces/_types_general_.track.md)>>
 
-*Defined in sites/youtube/youtube.ts:7*
+*Defined in [sites/youtube/youtube.ts:7](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/sites/youtube/youtube.ts#L7)*
 
 #### Parameters:
 

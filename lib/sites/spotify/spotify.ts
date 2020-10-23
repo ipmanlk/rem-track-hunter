@@ -26,7 +26,7 @@ export const getTracks = async (
 					{
 						name: data.track.name,
 						// duration: data.track.duration,
-						identifier: data.track.uri ? data.track.uri : "",
+						uri: data.track.uri ? data.track.uri : "",
 						getYtUrl: function () {
 							return getYoutubeUrl(ytSearchString);
 						},
@@ -45,7 +45,7 @@ export const getTracks = async (
 					return {
 						name: track.name,
 						// duration: track.duration,
-						identifier: track.uri ? track.uri : "",
+						uri: track.uri ? track.uri : "",
 						getYtUrl: function () {
 							return getYoutubeUrl(ytSearchString);
 						},
@@ -65,7 +65,7 @@ export const getTracks = async (
 					return {
 						name: track.name,
 						// duration: track.duration,
-						identifier: track.uri ? track.uri : "",
+						uri: track.uri ? track.uri : "",
 						getYtUrl: function () {
 							return getYoutubeUrl(ytSearchString);
 						},
@@ -85,7 +85,7 @@ export const getTracks = async (
 					return {
 						name: track.name,
 						// duration: track.duration,
-						identifier: track.uri ? track.uri : "",
+						uri: track.uri ? track.uri : "",
 						getYtUrl: function () {
 							return getYoutubeUrl(ytSearchString);
 						},

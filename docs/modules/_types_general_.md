@@ -1,4 +1,4 @@
-**[rem-track-hunter](../README.md)**
+**[@ipmanlk/rem-track-hunter](../README.md)**
 
 > [Globals](../globals.md) / "types/general"
 
@@ -22,7 +22,7 @@
 
 Ƭ  **trackType**: [urlType](_types_general_.md#urltype)
 
-*Defined in types/general.ts:2*
+*Defined in [types/general.ts:2](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/general.ts#L2)*
 
 ___
 
@@ -30,4 +30,4 @@ ___
 
 Ƭ  **urlType**: \"spotify\" \| \"themes.moe\" \| \"youtube\"
 
-*Defined in types/general.ts:1*
+*Defined in [types/general.ts:1](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/general.ts#L1)*

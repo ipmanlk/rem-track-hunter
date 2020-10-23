@@ -1,4 +1,4 @@
-**[rem-track-hunter](../README.md)**
+**[@ipmanlk/rem-track-hunter](../README.md)**
 
 > [Globals](../globals.md) / ["types/general"](../modules/_types_general_.md) / Track
 
@@ -14,11 +14,11 @@
 
 * [artist](_types_general_.track.md#artist)
 * [duration](_types_general_.track.md#duration)
-* [identifier](_types_general_.track.md#identifier)
 * [name](_types_general_.track.md#name)
 * [seekedTime](_types_general_.track.md#seekedtime)
 * [show](_types_general_.track.md#show)
 * [type](_types_general_.track.md#type)
+* [uri](_types_general_.track.md#uri)
 
 ### Methods
 
@@ -30,7 +30,7 @@
 
 • `Optional` **artist**: undefined \| string
 
-*Defined in types/general.ts:11*
+*Defined in [types/general.ts:11](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/general.ts#L11)*
 
 ___
 
@@ -38,15 +38,7 @@ ___
 
 • `Optional` **duration**: undefined \| number
 
-*Defined in types/general.ts:10*
-
-___
-
-### identifier
-
-•  **identifier**: string
-
-*Defined in types/general.ts:7*
+*Defined in [types/general.ts:10](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/general.ts#L10)*
 
 ___
 
@@ -54,7 +46,7 @@ ___
 
 •  **name**: string
 
-*Defined in types/general.ts:5*
+*Defined in [types/general.ts:5](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/general.ts#L5)*
 
 ___
 
@@ -62,7 +54,7 @@ ___
 
 • `Optional` **seekedTime**: undefined \| number
 
-*Defined in types/general.ts:9*
+*Defined in [types/general.ts:9](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/general.ts#L9)*
 
 ___
 
@@ -70,7 +62,7 @@ ___
 
 • `Optional` **show**: undefined \| string
 
-*Defined in types/general.ts:12*
+*Defined in [types/general.ts:12](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/general.ts#L12)*
 
 ___
 
@@ -78,7 +70,15 @@ ___
 
 •  **type**: [trackType](../modules/_types_general_.md#tracktype)
 
-*Defined in types/general.ts:6*
+*Defined in [types/general.ts:6](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/general.ts#L6)*
+
+___
+
+### uri
+
+•  **uri**: string
+
+*Defined in [types/general.ts:7](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/general.ts#L7)*
 
 ## Methods
 
@@ -86,7 +86,7 @@ ___
 
 ▸ `Optional`**getYtUrl**(`keywordOrUrl`: string): Promise\<string \| false>
 
-*Defined in types/general.ts:8*
+*Defined in [types/general.ts:8](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/general.ts#L8)*
 
 #### Parameters:
 

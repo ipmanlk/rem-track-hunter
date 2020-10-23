@@ -1,4 +1,4 @@
-**[rem-track-hunter](../README.md)**
+**[@ipmanlk/rem-track-hunter](../README.md)**
 
 > [Globals](../globals.md) / ["types/anime"](../modules/_types_anime_.md) / ThemesMoeResponse
 
@@ -24,7 +24,7 @@
 
 •  **malID**: number
 
-*Defined in types/anime.ts:26*
+*Defined in [types/anime.ts:26](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/anime.ts#L26)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 •  **name**: string
 
-*Defined in types/anime.ts:27*
+*Defined in [types/anime.ts:27](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/anime.ts#L27)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 •  **season**: string
 
-*Defined in types/anime.ts:29*
+*Defined in [types/anime.ts:29](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/anime.ts#L29)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 •  **themes**: [Theme](_types_anime_.theme.md)[]
 
-*Defined in types/anime.ts:30*
+*Defined in [types/anime.ts:30](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/anime.ts#L30)*
 
 ___
 
@@ -56,4 +56,4 @@ ___
 
 •  **year**: number
 
-*Defined in types/anime.ts:28*
+*Defined in [types/anime.ts:28](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/anime.ts#L28)*

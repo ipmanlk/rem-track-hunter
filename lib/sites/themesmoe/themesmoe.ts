@@ -40,7 +40,7 @@ export async function getTracks(
 			show: themesMoeResponse.name,
 			type: "themes.moe",
 			name: theme.themeName,
-			identifier: theme.mirror.mirrorURL,
+			uri: theme.mirror.mirrorURL,
 		} as General.Track;
 	});
 

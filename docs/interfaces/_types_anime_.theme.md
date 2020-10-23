@@ -1,4 +1,4 @@
-**[rem-track-hunter](../README.md)**
+**[@ipmanlk/rem-track-hunter](../README.md)**
 
 > [Globals](../globals.md) / ["types/anime"](../modules/_types_anime_.md) / Theme
 
@@ -22,7 +22,7 @@
 
 •  **mirror**: [Mirror](_types_anime_.mirror.md)
 
-*Defined in types/anime.ts:36*
+*Defined in [types/anime.ts:36](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/anime.ts#L36)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 •  **themeName**: string
 
-*Defined in types/anime.ts:35*
+*Defined in [types/anime.ts:35](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/anime.ts#L35)*
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 •  **themeType**: string
 
-*Defined in types/anime.ts:34*
+*Defined in [types/anime.ts:34](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/anime.ts#L34)*

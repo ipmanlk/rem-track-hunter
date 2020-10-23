@@ -1,4 +1,4 @@
-**[rem-track-hunter](../README.md)**
+**[@ipmanlk/rem-track-hunter](../README.md)**
 
 > [Globals](../globals.md) / ["types/anime"](../modules/_types_anime_.md) / Mirror
 
@@ -22,7 +22,7 @@
 
 •  **mirrorURL**: string
 
-*Defined in types/anime.ts:40*
+*Defined in [types/anime.ts:40](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/anime.ts#L40)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 •  **notes**: string
 
-*Defined in types/anime.ts:42*
+*Defined in [types/anime.ts:42](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/anime.ts#L42)*
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 •  **priority**: number
 
-*Defined in types/anime.ts:41*
+*Defined in [types/anime.ts:41](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/anime.ts#L41)*

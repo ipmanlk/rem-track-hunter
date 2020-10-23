@@ -1,4 +1,4 @@
-**[rem-track-hunter](../README.md)**
+**[@ipmanlk/rem-track-hunter](../README.md)**
 
 > [Globals](../globals.md) / "sites/themesmoe/themesmoe"
 
@@ -17,7 +17,7 @@
 
 ▸ **getTracks**(`animeName`: string): Promise\<Array\<[Track](../interfaces/_types_general_.track.md)>>
 
-*Defined in sites/themesmoe/themesmoe.ts:5*
+*Defined in [sites/themesmoe/themesmoe.ts:5](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/sites/themesmoe/themesmoe.ts#L5)*
 
 #### Parameters:
 
@@ -33,7 +33,7 @@ ___
 
 ▸ `Const`**request**(`url`: string): Promise\<any>
 
-*Defined in sites/themesmoe/themesmoe.ts:55*
+*Defined in [sites/themesmoe/themesmoe.ts:55](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/sites/themesmoe/themesmoe.ts#L55)*
 
 **`internal`** 
 
