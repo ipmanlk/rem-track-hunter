@@ -1,0 +1,9 @@
+{
+  "inputFiles": [
+    "./lib"
+  ],
+  "exclude": "**/*+(index|.spec|.e2e).ts",
+  "entryPoint": "/lib/index",
+  "mode": "modules",
+  "out": "docs"
+}

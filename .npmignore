@@ -1,0 +1,25 @@
+lib/
+dist/cache/
+
+#tests
+test
+coverage
+
+#build tools
+.travis.yml
+.jenkins.yml
+.codeclimate.yml
+
+#linters
+.jscsrc
+.jshintrc
+.eslintrc*
+
+#editor settings
+.idea
+.editorconfig
+tsconfig.json
+
+docs
+README.md
+typedoc.json
