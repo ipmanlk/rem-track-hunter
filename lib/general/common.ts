@@ -63,7 +63,9 @@ async function searchSearx(keyword: string): Promise<string | false> {
 
 	const response = await (
 		await fetch(
-			`https://searx.lukesmith.xyz/?category_general=1&q=${keyword} youtube&pageno=1&time_range=None&language=en-US&format=json`,
+			encodeURI(
+				`https://searx.lukesmith.xyz/?category_general=1&q=${keyword} youtube&pageno=1&time_range=None&language=en-US&format=json`
+			),
 			{
 				timeout: 10000,
 			}

@@ -53,5 +53,5 @@ export async function getTracks(
  * @internal
  */
 const request = async (url: string) => {
-	return await (await fetch(url, { timeout: 10000 }).catch()).json();
+	return await (await fetch(encodeURI(url), { timeout: 10000 }).catch()).json();
 };

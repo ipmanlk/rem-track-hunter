@@ -23,3 +23,7 @@ tsconfig.json
 docs
 README.md
 typedoc.json
+
+.vscode
+cache
+*.ignore.*

@@ -63,9 +63,11 @@ export async function getInfo(URI: string): Promise<Spotify.Info | undefined> {
 	const embedURL = spotifyURI.formatEmbedURL(parsedURI);
 
 	// get spotify embed page
-	const response = await fetch(embedURL, { timeout: 10000 }).catch(() => {
-		throw new Error("SPOTIFY_REQUEST_FAILED");
-	});
+	const response = await fetch(encodeURI(embedURL), { timeout: 10000 }).catch(
+		() => {
+			throw new Error("SPOTIFY_REQUEST_FAILED");
+		}
+	);
 
 	const responseHTML = await response.text();
 
