@@ -4,6 +4,10 @@ import * as Themesmoe from "./sites/themesmoe";
 import { getUrlType } from "./general/common";
 import { General } from "./types";
 import { urlType } from "./types/general";
+import * as Cache from "./util/cache";
+
+// init cache
+Cache.initializeDatabase();
 
 async function getTracks(
 	keywordOrUrl: string,
@@ -20,13 +24,48 @@ async function getTracks(
 	}
 
 	if (urlType == "youtube") {
-		return Youtube.getTracks(keywordOrUrl);
+		try {
+			const cachedTracks = await Cache.getValue("youtube", keywordOrUrl);
+			return JSON.parse(cachedTracks);
+		} catch (e) {
+			const tracks = await Youtube.getTracks(keywordOrUrl);
+			Cache.saveValue("youtube", keywordOrUrl, JSON.stringify(tracks)).catch(
+				(e) => {
+					console.log(e);
+				}
+			);
+			return tracks;
+		}
 	}
+
 	if (urlType == "spotify") {
-		return Spotify.getTracks(keywordOrUrl);
+		try {
+			const cachedTracks = await Cache.getSpotifyValue(keywordOrUrl);
+			return cachedTracks;
+		} catch (e) {
+			const tracks = await Spotify.getTracks(keywordOrUrl);
+			Cache.saveValue("spotify", keywordOrUrl, JSON.stringify(tracks)).catch(
+				(e) => {
+					console.log(e);
+				}
+			);
+			return tracks;
+		}
 	}
+
 	if (urlType == "themes.moe") {
-		return Themesmoe.getTracks(keywordOrUrl);
+		try {
+			const cachedTracks = await Cache.getValue("themesmoe", keywordOrUrl);
+			return JSON.parse(cachedTracks);
+		} catch (e) {
+			const tracks = await Themesmoe.getTracks(keywordOrUrl);
+			Cache.saveValue("themesmoe", keywordOrUrl, JSON.stringify(tracks)).catch(
+				(e) => {
+					console.log(e);
+				}
+			);
+			return tracks;
+		}
 	}
 
 	// if urlType is not matched

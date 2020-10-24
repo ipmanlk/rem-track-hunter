@@ -1,6 +1,8 @@
 import fetch from "node-fetch";
+import { type } from "os";
 import ytsr from "ytsr";
 import { General } from "../types";
+import * as Cache from "../util/cache";
 
 /**
  * @internal
@@ -23,6 +25,15 @@ export function getUrlType(url: string): General.urlType | false {
  */
 export async function getYoutubeUrl(keyword: string): Promise<string | false> {
 	let youtubeLink: string | false = false;
+
+	// try cache
+	const cachedLink = await Cache.getValue("youtube_url", keyword).catch((e) => {
+		console.log("Failed to read youtube_url table.");
+	});
+
+	if (cachedLink) return cachedLink;
+
+	// try online
 	try {
 		const searchResults = (await ytsr(keyword, {
 			limit: 1,
@@ -32,6 +43,14 @@ export async function getYoutubeUrl(keyword: string): Promise<string | false> {
 	} catch (e) {
 		youtubeLink = await searchSearx(keyword);
 	}
+
+	// if it's not false, write to cache
+	if (typeof youtubeLink == "string") {
+		Cache.saveValue("youtube_url", keyword, youtubeLink).catch((e) => {
+			console.log("Failed to write to youtube_url table.");
+		});
+	}
+
 	return youtubeLink;
 }
 
