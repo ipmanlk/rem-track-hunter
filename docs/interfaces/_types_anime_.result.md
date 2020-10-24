@@ -32,7 +32,7 @@
 
 •  **airing**: boolean
 
-*Defined in [types/anime.ts:14](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/anime.ts#L14)*
+*Defined in [types/anime.ts:14](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/anime.ts#L14)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 •  **end\_date**: string
 
-*Defined in [types/anime.ts:20](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/anime.ts#L20)*
+*Defined in [types/anime.ts:20](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/anime.ts#L20)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 •  **episodes**: number
 
-*Defined in [types/anime.ts:17](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/anime.ts#L17)*
+*Defined in [types/anime.ts:17](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/anime.ts#L17)*
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 •  **image\_url**: string
 
-*Defined in [types/anime.ts:12](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/anime.ts#L12)*
+*Defined in [types/anime.ts:12](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/anime.ts#L12)*
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 •  **mal\_id**: number
 
-*Defined in [types/anime.ts:10](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/anime.ts#L10)*
+*Defined in [types/anime.ts:10](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/anime.ts#L10)*
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 •  **members**: number
 
-*Defined in [types/anime.ts:21](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/anime.ts#L21)*
+*Defined in [types/anime.ts:21](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/anime.ts#L21)*
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 •  **rated**: string
 
-*Defined in [types/anime.ts:22](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/anime.ts#L22)*
+*Defined in [types/anime.ts:22](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/anime.ts#L22)*
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 •  **score**: number
 
-*Defined in [types/anime.ts:18](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/anime.ts#L18)*
+*Defined in [types/anime.ts:18](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/anime.ts#L18)*
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 •  **start\_date**: string
 
-*Defined in [types/anime.ts:19](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/anime.ts#L19)*
+*Defined in [types/anime.ts:19](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/anime.ts#L19)*
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 •  **synopsis**: string
 
-*Defined in [types/anime.ts:15](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/anime.ts#L15)*
+*Defined in [types/anime.ts:15](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/anime.ts#L15)*
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 •  **title**: string
 
-*Defined in [types/anime.ts:13](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/anime.ts#L13)*
+*Defined in [types/anime.ts:13](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/anime.ts#L13)*
 
 ___
 
@@ -120,7 +120,7 @@ ___
 
 •  **type**: string
 
-*Defined in [types/anime.ts:16](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/anime.ts#L16)*
+*Defined in [types/anime.ts:16](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/anime.ts#L16)*
 
 ___
 
@@ -128,4 +128,4 @@ ___
 
 •  **url**: string
 
-*Defined in [types/anime.ts:11](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/anime.ts#L11)*
+*Defined in [types/anime.ts:11](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/anime.ts#L11)*

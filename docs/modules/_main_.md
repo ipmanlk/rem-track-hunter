@@ -16,7 +16,7 @@
 
 ▸ **getTracks**(`keywordOrUrl`: string, `options?`: General.TrackHunterOptions): Promise\<Array\<[Track](../interfaces/_types_general_.track.md)>>
 
-*Defined in [main.ts:8](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/main.ts#L8)*
+*Defined in [main.ts:12](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/main.ts#L12)*
 
 #### Parameters:
 

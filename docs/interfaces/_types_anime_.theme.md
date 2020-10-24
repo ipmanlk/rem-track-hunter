@@ -22,7 +22,7 @@
 
 •  **mirror**: [Mirror](_types_anime_.mirror.md)
 
-*Defined in [types/anime.ts:36](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/anime.ts#L36)*
+*Defined in [types/anime.ts:36](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/anime.ts#L36)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 •  **themeName**: string
 
-*Defined in [types/anime.ts:35](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/anime.ts#L35)*
+*Defined in [types/anime.ts:35](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/anime.ts#L35)*
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 •  **themeType**: string
 
-*Defined in [types/anime.ts:34](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/anime.ts#L34)*
+*Defined in [types/anime.ts:34](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/anime.ts#L34)*

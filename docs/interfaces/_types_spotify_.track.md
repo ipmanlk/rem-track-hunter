@@ -28,7 +28,7 @@
 
 • `Optional` **album**: [Album](_types_spotify_.album.md)
 
-*Defined in [types/spotify.ts:30](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/spotify.ts#L30)*
+*Defined in [types/spotify.ts:30](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/spotify.ts#L30)*
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 • `Optional` **artists**: Array\<[Artist](_types_spotify_.artist.md)>
 
-*Defined in [types/spotify.ts:36](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/spotify.ts#L36)*
+*Defined in [types/spotify.ts:36](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/spotify.ts#L36)*
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 •  **duration**: number
 
-*Defined in [types/spotify.ts:33](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/spotify.ts#L33)*
+*Defined in [types/spotify.ts:33](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/spotify.ts#L33)*
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 • `Optional` **explicit**: undefined \| false \| true
 
-*Defined in [types/spotify.ts:34](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/spotify.ts#L34)*
+*Defined in [types/spotify.ts:34](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/spotify.ts#L34)*
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 • `Optional` **id**: undefined \| string
 
-*Defined in [types/spotify.ts:29](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/spotify.ts#L29)*
+*Defined in [types/spotify.ts:29](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/spotify.ts#L29)*
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 •  **name**: string
 
-*Defined in [types/spotify.ts:31](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/spotify.ts#L31)*
+*Defined in [types/spotify.ts:31](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/spotify.ts#L31)*
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 • `Optional` **preview\_url**: undefined \| string
 
-*Defined in [types/spotify.ts:32](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/spotify.ts#L32)*
+*Defined in [types/spotify.ts:32](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/spotify.ts#L32)*
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 • `Optional` **track**: undefined \| false \| true
 
-*Defined in [types/spotify.ts:37](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/spotify.ts#L37)*
+*Defined in [types/spotify.ts:37](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/spotify.ts#L37)*
 
 ___
 
@@ -92,4 +92,4 @@ ___
 
 • `Optional` **uri**: undefined \| string
 
-*Defined in [types/spotify.ts:35](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/types/spotify.ts#L35)*
+*Defined in [types/spotify.ts:35](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/spotify.ts#L35)*

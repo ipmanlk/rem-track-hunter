@@ -15,5 +15,7 @@
 * ["sites/themesmoe/themesmoe"](modules/_sites_themesmoe_themesmoe_.md)
 * ["sites/youtube/youtube"](modules/_sites_youtube_youtube_.md)
 * ["types/anime"](modules/_types_anime_.md)
+* ["types/database"](modules/_types_database_.md)
 * ["types/general"](modules/_types_general_.md)
 * ["types/spotify"](modules/_types_spotify_.md)
+* ["util/cache"](modules/_util_cache_.md)

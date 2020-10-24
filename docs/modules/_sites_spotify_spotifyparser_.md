@@ -21,7 +21,7 @@
 
 ▸ **getInfo**(`URI`: string): Promise\<[Info](../interfaces/_types_spotify_.info.md) \| undefined>
 
-*Defined in [sites/spotify/spotifyParser.ts:45](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/sites/spotify/spotifyParser.ts#L45)*
+*Defined in [sites/spotify/spotifyParser.ts:45](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/sites/spotify/spotifyParser.ts#L45)*
 
 **`internal`** 
 
@@ -39,7 +39,7 @@ ___
 
 ▸ **parseAlbum**(`data`: any): [Info](../interfaces/_types_spotify_.info.md)
 
-*Defined in [sites/spotify/spotifyParser.ts:189](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/sites/spotify/spotifyParser.ts#L189)*
+*Defined in [sites/spotify/spotifyParser.ts:189](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/sites/spotify/spotifyParser.ts#L189)*
 
 **`internal`** 
 
@@ -59,7 +59,7 @@ ___
 
 ▸ **parseArtist**(`data`: any): [Info](../interfaces/_types_spotify_.info.md)
 
-*Defined in [sites/spotify/spotifyParser.ts:158](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/sites/spotify/spotifyParser.ts#L158)*
+*Defined in [sites/spotify/spotifyParser.ts:158](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/sites/spotify/spotifyParser.ts#L158)*
 
 **`internal`** 
 
@@ -79,7 +79,7 @@ ___
 
 ▸ **parsePlaylist**(`data`: any): [Info](../interfaces/_types_spotify_.info.md)
 
-*Defined in [sites/spotify/spotifyParser.ts:238](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/sites/spotify/spotifyParser.ts#L238)*
+*Defined in [sites/spotify/spotifyParser.ts:238](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/sites/spotify/spotifyParser.ts#L238)*
 
 **`internal`** 
 
@@ -99,7 +99,7 @@ ___
 
 ▸ **parseResponse**(`responseHTML`: string, `parsedURI`: ParsedSpotifyUri): [Info](../interfaces/_types_spotify_.info.md) \| undefined
 
-*Defined in [sites/spotify/spotifyParser.ts:85](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/sites/spotify/spotifyParser.ts#L85)*
+*Defined in [sites/spotify/spotifyParser.ts:85](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/sites/spotify/spotifyParser.ts#L85)*
 
 **`internal`** 
 
@@ -118,7 +118,7 @@ ___
 
 ▸ **parseTrack**(`data`: any): [Info](../interfaces/_types_spotify_.info.md)
 
-*Defined in [sites/spotify/spotifyParser.ts:122](https://github.com/ipmanlk/rem-track-hunter/blob/f5d0220/lib/sites/spotify/spotifyParser.ts#L122)*
+*Defined in [sites/spotify/spotifyParser.ts:122](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/sites/spotify/spotifyParser.ts#L122)*
 
 **`internal`** 
 
