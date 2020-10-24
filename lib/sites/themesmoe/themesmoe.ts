@@ -38,7 +38,7 @@ export async function getTracks(
 	const tracks = themesMoeResponse.themes.map((theme) => {
 		return {
 			show: themesMoeResponse.name,
-			type: "themes.moe",
+			type: "themesmoe",
 			name: theme.themeName,
 			uri: theme.mirror.mirrorURL,
 		} as General.Track;

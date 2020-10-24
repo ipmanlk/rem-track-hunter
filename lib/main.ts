@@ -1,6 +1,7 @@
 import * as Spotify from "./sites/spotify";
 import * as Youtube from "./sites/youtube";
 import * as Themesmoe from "./sites/themesmoe";
+import * as Mp3Hunter from "./sites/mp3hunter";
 import { getUrlType } from "./general/common";
 import { General } from "./types";
 import { urlType } from "./types/general";
@@ -53,7 +54,7 @@ async function getTracks(
 		}
 	}
 
-	if (urlType == "themes.moe") {
+	if (urlType == "themesmoe") {
 		try {
 			const cachedTracks = await Cache.getValue("themesmoe", keywordOrUrl);
 			return JSON.parse(cachedTracks);
@@ -68,8 +69,14 @@ async function getTracks(
 		}
 	}
 
+	// * Won't setup caching for now since this site is not reliable
+	if (urlType == "mp3hunter") {
+		const tracks = await Mp3Hunter.getTracks(keywordOrUrl);
+		return tracks;
+	}
+
 	// if urlType is not matched
 	throw "Please provide a valid type!.";
 }
 
-export { Spotify, Youtube, getTracks };
+export { Spotify, Youtube, Mp3Hunter, getTracks };

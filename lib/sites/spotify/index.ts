@@ -1,1 +1,1 @@
-export * from "./spotify";
+export { getTracks } from "./spotify";

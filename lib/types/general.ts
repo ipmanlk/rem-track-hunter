@@ -1,4 +1,4 @@
-export type urlType = "spotify" | "themes.moe" | "youtube";
+export type urlType = "spotify" | "themesmoe" | "youtube" | "mp3hunter";
 export type trackType = urlType;
 
 export interface Track {
@@ -13,5 +13,5 @@ export interface Track {
 }
 
 export interface TrackHunterOptions {
-	type: trackType;
+	type: trackType | false;
 }
