@@ -28,7 +28,7 @@ export async function getYoutubeUrl(keyword: string): Promise<string | false> {
 
 	// try cache
 	const cachedLink = await Cache.getValue("youtube_url", keyword).catch((e) => {
-		console.log("Failed to read youtube_url table.");
+		// console.log("Failed to read youtube_url table.");
 	});
 
 	if (cachedLink) return cachedLink;
@@ -47,7 +47,7 @@ export async function getYoutubeUrl(keyword: string): Promise<string | false> {
 	// if it's not false, write to cache
 	if (typeof youtubeLink == "string") {
 		Cache.saveValue("youtube_url", keyword, youtubeLink).catch((e) => {
-			console.log("Failed to write to youtube_url table.");
+			// console.log("Failed to write to youtube_url table.");
 		});
 	}
 
