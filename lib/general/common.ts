@@ -1,5 +1,5 @@
 import fetch from "node-fetch";
-import { type } from "os";
+import cheerio from "cheerio";
 import ytsr from "ytsr";
 import { General } from "../types";
 import * as Cache from "../util/cache";
@@ -41,7 +41,7 @@ export async function getYoutubeUrl(keyword: string): Promise<string | false> {
 		})) as any;
 		youtubeLink = searchResults.items[0].link || false;
 	} catch (e) {
-		youtubeLink = await searchSearx(keyword);
+		youtubeLink = await searchStartpage(keyword);
 	}
 
 	// if it's not false, write to cache
@@ -58,26 +58,24 @@ export async function getYoutubeUrl(keyword: string): Promise<string | false> {
  * This will use as a fallback when ytsr fails to retrieve a link
  * @internal
  */
-async function searchSearx(keyword: string): Promise<string | false> {
+async function searchStartpage(keyword: string): Promise<string | false> {
 	let link: string | boolean = false;
 
 	const response = await (
-		await fetch(
-			encodeURI(
-				`https://searx.lukesmith.xyz/?category_general=1&q=${keyword} youtube&pageno=1&time_range=None&language=en-US&format=json`
-			),
-			{
-				timeout: 10000,
-			}
-		).catch()
-	).json();
+		await fetch(encodeURI(`https://startpage.com/sp/search?query=${keyword}`), {
+			timeout: 10000,
+		}).catch()
+	).text();
 
-	if (
-		response.results[0] &&
-		response.results[0].url.indexOf("youtube") !== -1
-	) {
-		link = response.results[0].url;
-	}
+	// parse startpage html
+	const $ = cheerio.load(response);
+
+	const resultLink = $("body")
+		.find(".w-gl__result .w-gl__result-second-line-container a")
+		.first()
+		.attr("href");
+
+	if (resultLink && resultLink.indexOf("youtube") > -1) link = resultLink;
 
 	return typeof link == "string" ? link : false;
 }
