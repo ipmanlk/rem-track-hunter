@@ -42,6 +42,7 @@ export function saveValue(
 	value: string
 ): Promise<void> {
 	return new Promise((resolve, reject) => {
+		if (process.env.SKIP_CACHE) reject("SKIP_CACHE");
 		const DB = getConnection();
 		DB.run(
 			`INSERT INTO ${table} VALUES(?,?)`,
@@ -61,6 +62,8 @@ export function saveValue(
  */
 export function getValue(table: Database.Table, key: string): Promise<string> {
 	return new Promise((resolve, reject) => {
+		// reject when testing
+		if (process.env.SKIP_CACHE) reject("SKIP_CACHE");
 		const DB = getConnection();
 		DB.get(
 			`SELECT value FROM ${table} WHERE key = ?`,
@@ -102,6 +105,7 @@ export function saveSpotifyTracks(key: string, tracks: Array<General.Track>) {
 export async function getSpotifyValue(
 	key: string
 ): Promise<Array<General.Track>> {
+	if (process.env.SKIP_CACHE) throw "SKIP_CACHE";
 	const value = await getValue("spotify", key);
 	const parsedValue = JSON.parse(value);
 
