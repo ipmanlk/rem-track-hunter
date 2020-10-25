@@ -6,10 +6,10 @@ jest.setTimeout(30000); // 30s
 
 const { getTracks } = require("../dist/");
 
-describe("Anime names for themes.more", () => {
+describe("Anime names for themesmoe", () => {
 	test("Try 'Naruto' as anime name", async () => {
 		const tracks = await getTracks("Naruto", {
-			type: "themes.moe",
+			type: "themesmoe",
 		});
 		expect(Array.isArray(tracks)).toBe(true);
 		expect(tracks[0].name).not.toBe(undefined);

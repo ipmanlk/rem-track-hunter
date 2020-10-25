@@ -1,4 +1,6 @@
 /* eslint-disable */
+
+// These tests won't work in Spotify unsupported countries
 "use strict";
 
 // settings for jest

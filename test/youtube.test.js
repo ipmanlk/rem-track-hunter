@@ -8,15 +8,24 @@ const { getTracks } = require("../dist/sites/youtube");
 
 describe("Various Keywords", () => {
 	test("Testing 'Numb linkin park' as keyword", async () => {
-		const tracks = await getTracks("Numb linkin park youtube");
+		const tracks = await getTracks("Numb linkin park");
 		expect(Array.isArray(tracks)).toBe(true);
 		expect(tracks[0].name).not.toBe(undefined);
 	});
 
 	test("Testing 'Naruto op 1' as keyword", async () => {
-		const tracks = await getTracks("Naruto op 1 youtube");
+		const tracks = await getTracks("Naruto op 1");
 		expect(Array.isArray(tracks)).toBe(true);
 		expect(tracks[0].name).not.toBe(undefined);
+	});
+
+	test("Testing '&Z sawano hiroyuki' as keyword", async () => {
+		const tracks = await getTracks("&Z sawano hiroyuki");
+		expect(Array.isArray(tracks)).toBe(true);
+		expect(tracks[0].name).not.toBe(undefined);
+		expect(tracks[0].uri).toEqual(
+			"https://www.youtube.com/watch?v=4gMXEd49rbg"
+		);
 	});
 });
 
