@@ -1,4 +1,5 @@
 import fetch from "node-fetch";
+import * as Cache from "../../util/cache";
 import { Anime } from "../../types";
 import { General } from "../../types";
 
@@ -9,6 +10,11 @@ export async function getTracks(
 		throw "Please provide a valid anime name!";
 	}
 
+	// try cache
+	try {
+		const cachedTracks = await Cache.getTracks("themesmoe", animeName);
+		return cachedTracks;
+	} catch {}
 	// find given anime on mal
 	const malResponse: Anime.MalResponse = await request(
 		`https://api.jikan.moe/v3/search/anime?q=${animeName}&limit=1`
@@ -45,6 +51,9 @@ export async function getTracks(
 	});
 
 	if (tracks.length == 0) throw `No tracks found for ${animeName}`;
+
+	// save in cache
+	Cache.saveTracks("themesmoe", animeName, tracks).catch(() => {});
 
 	return tracks;
 }

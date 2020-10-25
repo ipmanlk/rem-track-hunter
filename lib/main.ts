@@ -25,54 +25,20 @@ async function getTracks(
 	}
 
 	if (urlType == "youtube") {
-		try {
-			const cachedTracks = await Cache.getValue("youtube", keywordOrUrl);
-			return JSON.parse(cachedTracks);
-		} catch (e) {
-			const tracks = await Youtube.getTracks(keywordOrUrl);
-			Cache.saveValue("youtube", keywordOrUrl, JSON.stringify(tracks)).catch(
-				(e) => {
-					console.log(e);
-				}
-			);
-			return tracks;
-		}
+		return Youtube.getTracks(keywordOrUrl);
 	}
 
 	if (urlType == "spotify") {
-		try {
-			const cachedTracks = await Cache.getSpotifyValue(keywordOrUrl);
-			return cachedTracks;
-		} catch (e) {
-			const tracks = await Spotify.getTracks(keywordOrUrl);
-			Cache.saveValue("spotify", keywordOrUrl, JSON.stringify(tracks)).catch(
-				(e) => {
-					console.log(e);
-				}
-			);
-			return tracks;
-		}
+		return Spotify.getTracks(keywordOrUrl);
 	}
 
 	if (urlType == "themesmoe") {
-		try {
-			const cachedTracks = await Cache.getValue("themesmoe", keywordOrUrl);
-			return JSON.parse(cachedTracks);
-		} catch (e) {
-			const tracks = await Themesmoe.getTracks(keywordOrUrl);
-			Cache.saveValue("themesmoe", keywordOrUrl, JSON.stringify(tracks)).catch(
-				(e) => {
-					console.log(e);
-				}
-			);
-			return tracks;
-		}
+		return Themesmoe.getTracks(keywordOrUrl);
 	}
 
 	// * Won't setup caching for now since this site is not reliable
 	if (urlType == "mp3hunter") {
-		const tracks = await Mp3Hunter.getTracks(keywordOrUrl);
-		return tracks;
+		return Mp3Hunter.getTracks(keywordOrUrl);
 	}
 
 	// if urlType is not matched

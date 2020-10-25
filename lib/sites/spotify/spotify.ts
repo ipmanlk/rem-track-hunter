@@ -1,3 +1,4 @@
+import * as Cache from "../../util/cache";
 import { getInfo } from "./spotifyParser";
 import { getYoutubeUrl } from "../../sites/youtube";
 import { General } from "../../types";
@@ -5,14 +6,23 @@ import { General } from "../../types";
 export const getTracks = async (
 	spotifyUrl: string
 ): Promise<Array<General.Track>> => {
-	const data = await getInfo(spotifyUrl).catch((error) => {
-		throw error;
-	});
+	if (spotifyUrl.trim() == "") {
+		throw "Please provide a valid Spotify uri!.";
+	}
+
+	// try cache
+	try {
+		const cachedTracks = await Cache.getSpotifyTracks(spotifyUrl);
+		return cachedTracks;
+	} catch {}
+
+	const data = await getInfo(spotifyUrl);
 
 	if (!data || !data.type) {
 		throw "Unable to retrieve spotify tracks!.";
 	}
 
+	let tracks: Array<General.Track> | false = false;
 	const dataType = data.type;
 
 	switch (dataType) {
@@ -22,7 +32,7 @@ export const getTracks = async (
 					? data.track.artists.map((artist) => artist.name).join(", ")
 					: "";
 				const ytSearchString = `${data.track.name} ${artist}`;
-				return [
+				tracks = [
 					{
 						name: data.track.name,
 						// duration: data.track.duration,
@@ -35,9 +45,10 @@ export const getTracks = async (
 					},
 				];
 			}
+			break;
 		case "artist":
 			if (data.artist) {
-				return data.artist.tracks.map((track) => {
+				tracks = data.artist.tracks.map((track) => {
 					const artist = track.artists
 						? track.artists.map((a) => a.name).join(", ")
 						: "";
@@ -57,7 +68,7 @@ export const getTracks = async (
 			break;
 		case "album":
 			if (data.album && data.album.tracks) {
-				return data.album.tracks.map((track) => {
+				tracks = data.album.tracks.map((track) => {
 					const artist = track.artists
 						? track.artists.map((a) => a.name).join(", ")
 						: "";
@@ -77,7 +88,7 @@ export const getTracks = async (
 			break;
 		case "playlist":
 			if (data.playlist && data.playlist.tracks) {
-				return data.playlist.tracks.map((track) => {
+				tracks = data.playlist.tracks.map((track) => {
 					const artist = track.artists
 						? track.artists.map((a) => a.name).join(", ")
 						: "";
@@ -97,5 +108,12 @@ export const getTracks = async (
 			break;
 	}
 
-	throw "Unable to find any tracks!";
+	if (!tracks) {
+		throw "Unable to find any tracks!";
+	}
+
+	// save in cache
+	Cache.saveSpotifyTracks(spotifyUrl, tracks).catch(() => {});
+
+	return tracks;
 };

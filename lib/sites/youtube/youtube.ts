@@ -3,14 +3,24 @@ import ytsr from "ytsr";
 import cheerio from "cheerio";
 import fetch from "node-fetch";
 import ytpl from "ytpl";
-import { General } from "../../types";
 import * as Cache from "../../util/cache";
+import { General } from "../../types";
 import { stringify as stringifyQuery } from "querystring";
 
 export async function getTracks(
 	keywordOrUrl: string
 ): Promise<Array<General.Track>> {
 	let youtubeLink: string | false;
+
+	if (keywordOrUrl.trim() == "") {
+		throw "Please provide a valid keywordOrYrl";
+	}
+
+	// try cache
+	try {
+		const cachedTracks = await Cache.getTracks("youtube", keywordOrUrl);
+		return cachedTracks;
+	} catch {}
 
 	// check if this is a youtube url or not
 	const youtubeUrlRegex = new RegExp(
@@ -45,6 +55,9 @@ export async function getTracks(
 				} as General.Track;
 			});
 
+		// save in cache
+		Cache.saveTracks("youtube", keywordOrUrl, tracks).catch(() => {});
+
 		return tracks;
 	}
 
@@ -65,6 +78,9 @@ export async function getTracks(
 		duration: parseInt(trackInfo.videoDetails.lengthSeconds) || 0,
 	};
 
+	// save in cache
+	Cache.saveTracks("youtube", keywordOrUrl, [track]).catch(() => {});
+
 	return [track];
 }
 
@@ -77,11 +93,10 @@ export async function getYoutubeUrl(keyword: string): Promise<string | false> {
 	let youtubeLink: string | false = false;
 
 	// try cache
-	const cachedLink = await Cache.getValue("youtube_url", keyword).catch((e) => {
-		// console.log("Failed to read youtube_url table.");
-	});
-
-	if (cachedLink) return cachedLink;
+	try {
+		const cachedLink = await Cache.getValue("youtube_url", keyword);
+		return cachedLink;
+	} catch {}
 
 	// try online
 	try {
@@ -96,9 +111,7 @@ export async function getYoutubeUrl(keyword: string): Promise<string | false> {
 
 	// if it's not false, write to cache
 	if (typeof youtubeLink == "string") {
-		Cache.saveValue("youtube_url", keyword, youtubeLink).catch((e) => {
-			// console.log("Failed to write to youtube_url table.");
-		});
+		Cache.saveValue("youtube_url", keyword, youtubeLink).catch(() => {});
 	}
 
 	return youtubeLink;
