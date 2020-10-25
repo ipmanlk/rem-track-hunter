@@ -1,1 +1,1 @@
-export { getTracks } from "./mp3hunter";
+export * from "./mp3hunter";

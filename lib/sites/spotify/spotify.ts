@@ -1,5 +1,5 @@
 import { getInfo } from "./spotifyParser";
-import { getYoutubeUrl } from "../../general/common";
+import { getYoutubeUrl } from "../../sites/youtube";
 import { General } from "../../types";
 
 export const getTracks = async (

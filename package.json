@@ -11,7 +11,8 @@
   "scripts": {
     "buid": "tsc",
     "doc": "typedoc --plugin typedoc-plugin-markdown",
-    "test": "tsc && jest --detectOpenHandles test/*"
+    "test": "tsc && jest --detectOpenHandles test/*",
+    "jest": "tsc && jest --detectOpenHandles"
   },
   "author": "ipmanlk",
   "license": "MIT",

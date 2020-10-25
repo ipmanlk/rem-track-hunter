@@ -1,6 +1,6 @@
 import { existsSync, mkdirSync } from "fs";
 import { sqlite3 } from "sqlite3";
-import { getYoutubeUrl } from "../general/common";
+import { getYoutubeUrl } from "../sites/youtube";
 import { Database, General } from "../types";
 
 const sqlite3 = require("sqlite3").verbose();
