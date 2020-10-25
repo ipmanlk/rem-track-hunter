@@ -5,6 +5,7 @@ import fetch from "node-fetch";
 import ytpl from "ytpl";
 import { General } from "../../types";
 import * as Cache from "../../util/cache";
+import { stringify as stringifyQuery } from "querystring";
 
 export async function getTracks(
 	keywordOrUrl: string
@@ -111,9 +112,14 @@ async function searchStartpage(keyword: string): Promise<string | false> {
 	let link: string | boolean = false;
 
 	const response = await (
-		await fetch(encodeURI(`https://startpage.com/sp/search?query=${keyword}`), {
-			timeout: 10000,
-		}).catch()
+		await fetch(
+			"https://startpage.com/sp/search?" +
+				stringifyQuery({ query: `${keyword} youtube` }) +
+				'"',
+			{
+				timeout: 10000,
+			}
+		).catch()
 	).text();
 
 	// parse startpage html
