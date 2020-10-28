@@ -18,6 +18,6 @@
 
 ### type
 
-•  **type**: [trackType](../modules/_types_general_.md#tracktype)
+•  **type**: [trackType](../modules/_types_general_.md#tracktype) \| false
 
-*Defined in [types/general.ts:16](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/general.ts#L16)*
+*Defined in [types/general.ts:16](https://github.com/ipmanlk/rem-track-hunter/blob/89e99c1/lib/types/general.ts#L16)*

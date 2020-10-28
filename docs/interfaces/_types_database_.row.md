@@ -21,7 +21,7 @@
 
 •  **key**: string
 
-*Defined in [types/database.ts:2](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/database.ts#L2)*
+*Defined in [types/database.ts:2](https://github.com/ipmanlk/rem-track-hunter/blob/89e99c1/lib/types/database.ts#L2)*
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 •  **value**: string
 
-*Defined in [types/database.ts:3](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/database.ts#L3)*
+*Defined in [types/database.ts:3](https://github.com/ipmanlk/rem-track-hunter/blob/89e99c1/lib/types/database.ts#L3)*

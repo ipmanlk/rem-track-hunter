@@ -24,4 +24,4 @@ getTracks("Naruto", {type: "themes.moe"}).then(tracks => {
 
 ```
 ### Docs
-[View Docs](https://ipmanlk.github.io/rem-track-hunter/)
+[View Docs](https://github.com/ipmanlk/rem-track-hunter/blob/master/docs/globals.md)

@@ -30,7 +30,7 @@
 
 • `Optional` **artist**: undefined \| string
 
-*Defined in [types/general.ts:11](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/general.ts#L11)*
+*Defined in [types/general.ts:11](https://github.com/ipmanlk/rem-track-hunter/blob/89e99c1/lib/types/general.ts#L11)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • `Optional` **duration**: undefined \| number
 
-*Defined in [types/general.ts:10](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/general.ts#L10)*
+*Defined in [types/general.ts:10](https://github.com/ipmanlk/rem-track-hunter/blob/89e99c1/lib/types/general.ts#L10)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 •  **name**: string
 
-*Defined in [types/general.ts:5](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/general.ts#L5)*
+*Defined in [types/general.ts:5](https://github.com/ipmanlk/rem-track-hunter/blob/89e99c1/lib/types/general.ts#L5)*
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 • `Optional` **seekedTime**: undefined \| number
 
-*Defined in [types/general.ts:9](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/general.ts#L9)*
+*Defined in [types/general.ts:9](https://github.com/ipmanlk/rem-track-hunter/blob/89e99c1/lib/types/general.ts#L9)*
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 • `Optional` **show**: undefined \| string
 
-*Defined in [types/general.ts:12](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/general.ts#L12)*
+*Defined in [types/general.ts:12](https://github.com/ipmanlk/rem-track-hunter/blob/89e99c1/lib/types/general.ts#L12)*
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 •  **type**: [trackType](../modules/_types_general_.md#tracktype)
 
-*Defined in [types/general.ts:6](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/general.ts#L6)*
+*Defined in [types/general.ts:6](https://github.com/ipmanlk/rem-track-hunter/blob/89e99c1/lib/types/general.ts#L6)*
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 •  **uri**: string
 
-*Defined in [types/general.ts:7](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/general.ts#L7)*
+*Defined in [types/general.ts:7](https://github.com/ipmanlk/rem-track-hunter/blob/89e99c1/lib/types/general.ts#L7)*
 
 ## Methods
 
@@ -86,7 +86,7 @@ ___
 
 ▸ `Optional`**getYtUrl**(`keywordOrUrl`: string): Promise\<string \| false>
 
-*Defined in [types/general.ts:8](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/general.ts#L8)*
+*Defined in [types/general.ts:8](https://github.com/ipmanlk/rem-track-hunter/blob/89e99c1/lib/types/general.ts#L8)*
 
 #### Parameters:
 

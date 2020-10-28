@@ -21,7 +21,7 @@
 
 Ƭ  **DBError**: null \| Error
 
-*Defined in [types/database.ts:6](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/database.ts#L6)*
+*Defined in [types/database.ts:6](https://github.com/ipmanlk/rem-track-hunter/blob/89e99c1/lib/types/database.ts#L6)*
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 Ƭ  **Table**: \"youtube\" \| \"youtube\_url\" \| \"themesmoe\" \| \"spotify\"
 
-*Defined in [types/database.ts:8](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/database.ts#L8)*
+*Defined in [types/database.ts:8](https://github.com/ipmanlk/rem-track-hunter/blob/89e99c1/lib/types/database.ts#L8)*

@@ -17,7 +17,7 @@
 
 ▸ **getTracks**(`animeName`: string): Promise\<Array\<[Track](../interfaces/_types_general_.track.md)>>
 
-*Defined in [sites/themesmoe/themesmoe.ts:5](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/sites/themesmoe/themesmoe.ts#L5)*
+*Defined in [sites/themesmoe/themesmoe.ts:6](https://github.com/ipmanlk/rem-track-hunter/blob/89e99c1/lib/sites/themesmoe/themesmoe.ts#L6)*
 
 #### Parameters:
 
@@ -33,7 +33,7 @@ ___
 
 ▸ `Const`**request**(`url`: string): Promise\<any>
 
-*Defined in [sites/themesmoe/themesmoe.ts:55](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/sites/themesmoe/themesmoe.ts#L55)*
+*Defined in [sites/themesmoe/themesmoe.ts:64](https://github.com/ipmanlk/rem-track-hunter/blob/89e99c1/lib/sites/themesmoe/themesmoe.ts#L64)*
 
 **`internal`** 
 

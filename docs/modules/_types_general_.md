@@ -22,12 +22,12 @@
 
 Ƭ  **trackType**: [urlType](_types_general_.md#urltype)
 
-*Defined in [types/general.ts:2](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/general.ts#L2)*
+*Defined in [types/general.ts:2](https://github.com/ipmanlk/rem-track-hunter/blob/89e99c1/lib/types/general.ts#L2)*
 
 ___
 
 ### urlType
 
-Ƭ  **urlType**: \"spotify\" \| \"themes.moe\" \| \"youtube\"
+Ƭ  **urlType**: \"spotify\" \| \"themesmoe\" \| \"youtube\" \| \"mp3hunter\"
 
-*Defined in [types/general.ts:1](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/general.ts#L1)*
+*Defined in [types/general.ts:1](https://github.com/ipmanlk/rem-track-hunter/blob/89e99c1/lib/types/general.ts#L1)*

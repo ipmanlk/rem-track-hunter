@@ -22,7 +22,7 @@
 
 •  **mirrorURL**: string
 
-*Defined in [types/anime.ts:40](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/anime.ts#L40)*
+*Defined in [types/anime.ts:40](https://github.com/ipmanlk/rem-track-hunter/blob/89e99c1/lib/types/anime.ts#L40)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 •  **notes**: string
 
-*Defined in [types/anime.ts:42](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/anime.ts#L42)*
+*Defined in [types/anime.ts:42](https://github.com/ipmanlk/rem-track-hunter/blob/89e99c1/lib/types/anime.ts#L42)*
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 •  **priority**: number
 
-*Defined in [types/anime.ts:41](https://github.com/ipmanlk/rem-track-hunter/blob/1b078d0/lib/types/anime.ts#L41)*
+*Defined in [types/anime.ts:41](https://github.com/ipmanlk/rem-track-hunter/blob/89e99c1/lib/types/anime.ts#L41)*
