@@ -93,7 +93,7 @@ function parseResponse(
 	// try to parse JSON inside resource element
 	let data;
 	try {
-		data = JSON.parse($("#resource").html() || "");
+		data = JSON.parse(decodeURIComponent($("#resource").html() || ""));
 	} catch (e) {
 		new Error("SPOTIFY_HTML_PARSE_ERROR");
 	}
@@ -136,7 +136,7 @@ function parseTrack(data: any): Spotify.Info {
 			name: data.name,
 			preview_url: data.preview_url,
 			album: album,
-			duration: data.duration,
+			duration: data.duration_ms,
 			explicit: data.explicit,
 			artists: data.album.artists.map((a: Spotify.Artist) => {
 				return {
